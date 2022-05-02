@@ -54,8 +54,8 @@ class MyApp extends StatelessWidget {
                               style: TextStyle(fontSize: 20),),
                             SizedBox(height: 4,),
                             Text('성동구 행당동 - 끌올 10분 전', style: TextStyle(color: Colors.grey),),
-                            Text("hi")
-                            
+                            Text("210,000원", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),)
+
                           ],
                         )
                       ],
