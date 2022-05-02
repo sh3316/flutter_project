@@ -30,16 +30,40 @@ class MyApp extends StatelessWidget {
             SizedBox(width: 10,)
           ],
         ),
-        body: Column(
-          children: [
-            Row(children: [
-              Container(
-                child: Image.asset('camera.png',width: 100, height: 100), padding: EdgeInsets.only(left: 2, right: 2, bottom: 1)
-              )
-            ],),
-            Row(children: [],)
-          ]
-        )
-    ));
+        body:(
+            Padding(padding: const EdgeInsets.all(20),
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(top: BorderSide(width: 1, color: Color.fromRGBO(
+                          220, 220, 220, 1.0)))),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(width: 150),
+                          Image.asset('camera.png',width: 150, height: 200)
+                        ]
+                      ),
+                      SizedBox(width: 25),
+
+                      Column(children: [
+                        SizedBox(height:25),
+                        Column(
+                          children: [
+                            Text('캐논 DSLR 100D (단렌즈, \n충전기 16기가SD 포함)',textAlign: TextAlign.left,
+                              style: TextStyle(fontSize: 20),),
+                            SizedBox(height: 4,),
+                            Text('성동구 행당동 - 끌올 10분 전', style: TextStyle(color: Colors.grey),),
+                            Text("hi")
+                          ],
+                        )
+                      ],
+                      )
+                    ],
+                  ),
+
+
+      )
+    ))));
   }
 }
