@@ -55,6 +55,7 @@ class MyApp extends StatelessWidget {
                             SizedBox(height: 4,),
                             Text('성동구 행당동 - 끌올 10분 전', style: TextStyle(color: Colors.grey),),
                             Text("hi")
+                            
                           ],
                         )
                       ],
