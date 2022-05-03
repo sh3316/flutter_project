@@ -49,12 +49,23 @@ class MyApp extends StatelessWidget {
                       Column(children: [
                         SizedBox(height:25),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('캐논 DSLR 100D (단렌즈, \n충전기 16기가SD 포함)',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20),),
                             SizedBox(height: 4,),
-                            Text('성동구 행당동 - 끌올 10분 전', style: TextStyle(color: Colors.grey),),
-                            Text("210,000원", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),)
+                            Text('성동구 행당동 - 끌올 10분 전', textAlign: TextAlign.left,style: TextStyle(color: Colors.grey),),
+                            SizedBox(height: 4,),
+                            Text("210,000원", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                            SizedBox(height: 10,),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                SizedBox(width: 250,),
+                                Icon(Icons.favorite_border),
+                                Text('4')
+                              ],
+                            )
                           ],
                         )
                       ],
